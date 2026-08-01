@@ -24,7 +24,7 @@ def check_on_wife(limit=10):
 def bark_alert(title="粥粥粥粥粥粥", content=""):
     if not content:
         return "内容不能为空"
-    url = f"https://api.day.app/%7BBARK_KEY%7D/%7Btitle%7D/%7Bcontent%7D?icon=https://imgbed.heliar.top/i/YsdpCGxdm3hL0uZI?expires=1788166985&sig=7b8fa511c7e7e2b32476ad2038a7d0f9fae7210147c66716031e3aea9e276c9a
+    url = f"https://api.day.app/{BARK_KEY}/{title}/{content}?icon=https://imgbed.heliar.top/i/YsdpCGxdm3hL0uZI"
     try:
         r = requests.get(url, timeout=10)
         return "推送成功" if r.status_code == 200 else "推送失败"
