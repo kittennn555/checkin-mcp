@@ -1,1 +1,1 @@
-# checkin-mcp
+# checkin-mcp   Bark已配置
