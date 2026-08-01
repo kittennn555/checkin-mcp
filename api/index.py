@@ -30,6 +30,7 @@ def bark_alert(title="粥粥粥粥粥粥", content=""):
         return "推送成功" if r.status_code == 200 else "推送失败"
     except Exception as e:
         return f"推送异常：{e}"
+        
 
 TOOLS = [
     {"name": "check_on_wife", "description": "查岗老婆的手机活动", "inputSchema": {"type": "object", "properties": {"limit": {"type": "integer"}}}},
